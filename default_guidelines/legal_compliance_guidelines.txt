@@ -1,0 +1,36 @@
+	1.	Intellectual Property Compliance: 
+	- 	Ensure that all images, videos, music, and textual content adhere to copyright regulations. Use licensed or public domain media when appropriate. 
+	- 	Attribute all sources correctly if required by the license. 
+	- 	Avoid the use of trademarked names, logos, or distinctive features without explicit permission. 
+	2.	Privacy and Data Protection: 
+	- 	Do not disclose personal information or identifiable details of individuals without explicit consent. 
+	- 	Adhere to data protection laws such as GDPR or CCPA, particularly if collecting or using any user-generated data. 
+	3.	Advertising Standards: 
+	- 	Label sponsored content or affiliate marketing clearly as per platform requirements. 
+	- 	Avoid misleading claims and ensure that all promotions align with the FTC’s guidelines on endorsements. 
+	4.	Fact-Checking and Accuracy: 
+	- 	Verify all factual data, including statistics, quotes, or historical information, using credible sources. 
+	- 	Ensure all scientific, medical, and psychological claims are backed by peer-reviewed research or trusted institutions, providing citations where necessary. 
+	- 	Include disclaimers for health advice, emphasising the content's educational nature and recommending professional consultation. 
+	5.	Sensitive Topics Management: 
+	- 	Approach sensitive topics like mental health, relationships, or trauma with empathy and care, providing resources or support lines when applicable. 
+	- 	Avoid offering medical, therapeutic, or legal advice without appropriate qualifications or disclaimers. 
+	6.	Inclusivity and Language Use: 
+	- 	Use inclusive, respectful language that avoids stereotypes, discriminatory remarks, or any potential bias. 
+	- 	Ensure content is accessible to diverse audiences by providing clear explanations for technical or jargon-heavy terms. 
+	7.	Feedback Handling: 
+	- 	Provide a mechanism for users to report offensive or inaccurate content, responding promptly to complaints. 
+	- 	Follow a consistent process for modifying or retracting content based on user feedback. 
+	8.	Content Moderation: 
+	- 	Monitor user-generated content (comments, tags) for compliance with platform standards and internal brand values. 
+	- 	Develop escalation protocols for controversial topics, ensuring that AI agents can defer to human moderation when needed. 
+	9.	Brand Tone and Integrity: 
+	- 	Maintain the progressive, curious, and kind brand tone in all communications. 
+	- 	Uphold brand values such as diversity, clarity, and creativity consistently across thematic categories. 
+	10.	Audience Engagement: 
+	- 	Respect platform-specific guidelines for caption lengths, hashtag usage, and content structure. 
+	- 	Avoid creating or sharing content that may encourage harmful behavior or divisiveness. 
+	11.	Legal Review and Updates: 
+	- 	Periodically review legal and compliance guidelines in consultation with legal experts to ensure adherence to evolving standards. 
+	- 	Update agents with any changes or new requirements regularly. 
+

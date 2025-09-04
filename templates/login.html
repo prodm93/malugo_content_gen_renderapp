@@ -1,0 +1,25 @@
+
+{% extends "base.html" %}
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-md-6">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h3 class="mb-3">Sign in</h3>
+        <form method="post">
+          <div class="mb-3">
+            <label class="form-label">Username</label>
+            <input class="form-control" name="username" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input type="password" class="form-control" name="password" required>
+          </div>
+          <button class="btn btn-primary">Login</button>
+        </form>
+        <p class="text-muted mt-3 small">Set <code>ADMIN_USERNAME</code> and <code>ADMIN_PASSWORD</code> env vars on Render.</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

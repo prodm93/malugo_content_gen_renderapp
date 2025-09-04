@@ -1,0 +1,87 @@
+
+{% extends "base.html" %}
+{% block content %}
+<h3 class="mb-3">Content Generation</h3>
+<form method="post">
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <label class="form-label">Title</label>
+      <input class="form-control" name="title">
+    </div>
+    <div class="col-md-6 mb-3">
+      <label class="form-label">Broad topic</label>
+      <input class="form-control" name="broad_topic">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 mb-3">
+      <label class="form-label">Text or Video</label>
+      <select class="form-select" name="text_or_video">
+        <option>Text</option>
+        <option>Video</option>
+      </select>
+    </div>
+    <div class="col-md-2 mb-3">
+      <label class="form-label">Language</label>
+      <input class="form-control" name="language" value="EN">
+    </div>
+    <div class="col-md-6 mb-3">
+      <label class="form-label">Linkup query (optional)</label>
+      <input class="form-control" name="linkup_query" placeholder="research query">
+      <div class="form-text">Optional web research via Linkup if keys configured.</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <label class="form-label">Brand guidelines</label>
+      <textarea class="form-control" name="brand_guidelines" rows="4"></textarea>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label class="form-label">Structure guidelines</label>
+      <textarea class="form-control" name="structure_guidelines" rows="4"></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <label class="form-label">Tone of voice</label>
+      <textarea class="form-control" name="tov_guidelines" rows="4"></textarea>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label class="form-label">Editorial standards</label>
+      <textarea class="form-control" name="editorial_standards" rows="4"></textarea>
+    </div>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Examples</label>
+    <textarea class="form-control" name="examples" rows="4"></textarea>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Supplemental info</label>
+    <textarea class="form-control" name="supp_info" rows="4"></textarea>
+  </div>
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <label class="form-label">Frequent terms (JSON dict)</label>
+      <textarea class="form-control" name="freq_terms" rows="3" placeholder='{"must_use":["term1","term2"],"avoid":["termX"]}'></textarea>
+    </div>
+    <div class="col-md-3 mb-3 form-check mt-4">
+      <input class="form-check-input" type="checkbox" name="enable_web_search" id="ews">
+      <label class="form-check-label" for="ews">Enable model web search</label>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label class="form-label">Linkup mode</label>
+      <select class="form-select" name="linkup_mode">
+        <option value="searchResults" selected>searchResults</option>
+        <option value="sourcedAnswer">sourcedAnswer</option>
+      </select>
+    </div>
+  </div>
+  <button class="btn btn-primary">Generate</button>
+</form>
+
+{% if output %}
+<hr>
+<h5>Draft</h5>
+<pre class="p-3 bg-white border rounded">{{ output }}</pre>
+{% endif %}
+{% endblock %}

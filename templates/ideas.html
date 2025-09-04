@@ -1,0 +1,27 @@
+
+{% extends "base.html" %}
+{% block content %}
+<h3 class="mb-3">Idea Generation</h3>
+<form method="post">
+  <div class="row">
+    <div class="col-md-5 mb-3">
+      <label class="form-label">Topic</label>
+      <input class="form-control" name="topic" required>
+    </div>
+    <div class="col-md-5 mb-3">
+      <label class="form-label">Content type</label>
+      <input class="form-control" name="content_type" placeholder="TikTok, IG carousel, etc." required>
+    </div>
+    <div class="col-md-2 mb-3">
+      <label class="form-label"># Ideas</label>
+      <input class="form-control" name="num_ideas" type="number" value="10" min="1" max="50">
+    </div>
+  </div>
+  <button class="btn btn-primary">Generate</button>
+</form>
+{% if output %}
+<hr>
+<h5>Ideas</h5>
+<pre class="p-3 bg-white border rounded">{{ output }}</pre>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,21 @@
+
+{% extends "base.html" %}
+{% block content %}
+<h3 class="mb-3">Revision Agent</h3>
+<form method="post">
+  <div class="mb-3">
+    <label class="form-label">Draft</label>
+    <textarea class="form-control" name="draft" rows="8" required></textarea>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Instructions</label>
+    <textarea class="form-control" name="instructions" rows="5"></textarea>
+  </div>
+  <button class="btn btn-primary">Revise</button>
+</form>
+{% if output %}
+<hr>
+<h5>Revised Draft</h5>
+<pre class="p-3 bg-white border rounded">{{ output }}</pre>
+{% endif %}
+{% endblock %}

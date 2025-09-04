@@ -1,0 +1,21 @@
+
+{% extends "base.html" %}
+{% block content %}
+<h3 class="mb-3">Translation (EN → pt-BR)</h3>
+<form method="post">
+  <div class="mb-3">
+    <label class="form-label">Source text</label>
+    <textarea class="form-control" name="source_text" rows="8" required></textarea>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Prompt (optional)</label>
+    <textarea class="form-control" name="custom_prompt" rows="6">{{ default_prompt }}</textarea>
+  </div>
+  <button class="btn btn-primary">Translate</button>
+</form>
+{% if output %}
+<hr>
+<h5>Translation</h5>
+<pre class="p-3 bg-white border rounded">{{ output }}</pre>
+{% endif %}
+{% endblock %}

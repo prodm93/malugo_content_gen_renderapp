@@ -1,0 +1,21 @@
+
+{% extends "base.html" %}
+{% block content %}
+<h3 class="mb-3">QA & Legal Compliance</h3>
+<form method="post">
+  <div class="mb-3">
+    <label class="form-label">Draft</label>
+    <textarea class="form-control" name="draft" rows="8" required></textarea>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Rules / Checklist</label>
+    <textarea class="form-control" name="rules" rows="6" placeholder="Paste your compliance rules or checklist..."></textarea>
+  </div>
+  <button class="btn btn-primary">Check</button>
+</form>
+{% if output %}
+<hr>
+<h5>Findings</h5>
+<pre class="p-3 bg-white border rounded">{{ output }}</pre>
+{% endif %}
+{% endblock %}
